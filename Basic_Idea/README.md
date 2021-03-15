@@ -1,23 +1,5 @@
 The basic idea for projection onto the probability simplex is sort the vector as y, then find the max k={\sum_{i=1}^{k} y_{i} - a \leq k * y_{k}}.
 
-So, we can find k like:
-
-s = 0
-
-for i = 1:n
-
-  s += y_{i}
-  
-  if s - a > i * y_{i}
-  
-    break
-    
-  end
-  
-end
-
-return i
-
 It is easy to implement it, like foo1().
 
 Now, we parallize it with parallel mergesort and prefix sum as foo2().
