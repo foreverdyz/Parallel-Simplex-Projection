@@ -1,11 +1,7 @@
 #=
-This script implements a basic idea for parallel projection onto the
-probability simplex. The idea includes parallel sort (Usually, we use
-mergesort for shared arrary.) and parallel scan to find the τ.
-For the parallel scan, prefix sum is a general idea. But we want to get
-the summations of previous n entries in order, while prefix sum does not
-generate the partial summations in order. Meanwhile, we do not have enough
-threads, so we try another method to implement parallel scan.
+This script implements a basic idea for parallel projection onto the probability simplex. The idea includes parallel sort (Usually, we use mergesort for shared 
+arrary.) and parallel scan to find the τ. For the parallel scan, prefix sum is a general idea. But we want to get the summations of previous n entries in order, 
+while prefix sum does not generate the partial summations in order, so we try another method to implement parallel scan.
 =#
 using ThreadsX
 using BenchmarkTools
@@ -14,8 +10,7 @@ using Base.Threads
 #foo1 is the function does not use the multiple threads
 function foo1(data,a)
     N=length(data)
-    y=sort(data;alg=QuickSort,rev=true)
-
+    y=sort(data;alg=QuickSort,rev=true) #
     global s=0
     for i in 1:N
         global s
