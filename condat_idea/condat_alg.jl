@@ -1,4 +1,5 @@
-#This script implement the Condat's algorithm without multiple threads
+#This script implement the Condat's algorithm without multiple threads. This algorithm is proposed by Condat in 
+#Condat, L. Fast projection onto the simplex and the 𝑙1 ball. Math. Program. 158, 575–585 (2016). https://doi.org/10.1007/s10107-015-0946-6
 
 function condat(data,a) #data is the input and a is the constant number
     #v=copy(data)
