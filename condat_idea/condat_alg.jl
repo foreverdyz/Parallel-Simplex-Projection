@@ -27,6 +27,8 @@ function condat(data,a) #data is the input and a is the constant number
     return p
 end
 
+# This function will help to scan the whole vector firstly and discards some too small entries.
+# It also has a filter technique which can discard more elements if there is a large term.
 function scanLf(y,a)
     l=length(y)
     global p=y[1]-a
