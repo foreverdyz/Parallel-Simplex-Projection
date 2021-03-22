@@ -1,0 +1,123 @@
+#####################################################
+Trail 5 in different a with 6 threads.
+The a = 1
+foo2 vs foo1: TrialRatio(64.52%)
+foo3 vs foo1: TrialRatio(64.52%)
+condat vs foo1: TrialRatio(30.36%)
+pcondat vs foo1: TrialRatio(19.63%)
+foo1: TrialEstimate(984.298 ms)
+foo2: TrialEstimate(635.072 ms)
+foo3: TrialEstimate(561.546 ms)
+condat: TrialEstimate(298.796 ms)
+pcondat: TrialEstimate(193.186 ms)
+=====================================================
+The a = 2
+foo2 vs foo1: TrialRatio(64.25%)
+foo3 vs foo1: TrialRatio(64.25%)
+condat vs foo1: TrialRatio(30.72%)
+pcondat vs foo1: TrialRatio(19.55%)
+foo1: TrialEstimate(937.366 ms)
+foo2: TrialEstimate(602.260 ms)
+foo3: TrialEstimate(567.831 ms)
+condat: TrialEstimate(287.936 ms)
+pcondat: TrialEstimate(183.210 ms)
+=====================================================
+The a = 4
+foo2 vs foo1: TrialRatio(61.20%)
+foo3 vs foo1: TrialRatio(61.20%)
+condat vs foo1: TrialRatio(28.98%)
+pcondat vs foo1: TrialRatio(18.98%)
+foo1: TrialEstimate(1.010 s)
+foo2: TrialEstimate(618.077 ms)
+foo3: TrialEstimate(573.083 ms)
+condat: TrialEstimate(292.640 ms)
+pcondat: TrialEstimate(191.678 ms)
+=====================================================
+The a = 8
+foo2 vs foo1: TrialRatio(63.79%)
+foo3 vs foo1: TrialRatio(63.79%)
+condat vs foo1: TrialRatio(31.19%)
+pcondat vs foo1: TrialRatio(22.99%)
+foo1: TrialEstimate(936.040 ms)
+foo2: TrialEstimate(597.147 ms)
+foo3: TrialEstimate(572.351 ms)
+condat: TrialEstimate(291.994 ms)
+pcondat: TrialEstimate(215.208 ms)
+=====================================================
+The a = 16
+foo2 vs foo1: TrialRatio(65.28%)
+foo3 vs foo1: TrialRatio(65.28%)
+condat vs foo1: TrialRatio(30.73%)
+pcondat vs foo1: TrialRatio(23.63%)
+foo1: TrialEstimate(962.878 ms)
+foo2: TrialEstimate(628.609 ms)
+foo3: TrialEstimate(586.936 ms)
+condat: TrialEstimate(295.925 ms)
+pcondat: TrialEstimate(227.503 ms)
+=====================================================
+The a = 32
+foo2 vs foo1: TrialRatio(64.51%)
+foo3 vs foo1: TrialRatio(64.51%)
+condat vs foo1: TrialRatio(32.03%)
+pcondat vs foo1: TrialRatio(24.74%)
+foo1: TrialEstimate(935.834 ms)
+foo2: TrialEstimate(603.707 ms)
+foo3: TrialEstimate(509.528 ms)
+condat: TrialEstimate(299.721 ms)
+pcondat: TrialEstimate(231.542 ms)
+=====================================================
+The a = 64
+foo2 vs foo1: TrialRatio(64.13%)
+foo3 vs foo1: TrialRatio(64.13%)
+condat vs foo1: TrialRatio(32.42%)
+pcondat vs foo1: TrialRatio(25.53%)
+foo1: TrialEstimate(935.105 ms)
+foo2: TrialEstimate(599.675 ms)
+foo3: TrialEstimate(568.013 ms)
+condat: TrialEstimate(303.153 ms)
+pcondat: TrialEstimate(238.753 ms)
+=====================================================
+The a = 128
+foo2 vs foo1: TrialRatio(64.37%)
+foo3 vs foo1: TrialRatio(64.37%)
+condat vs foo1: TrialRatio(33.08%)
+pcondat vs foo1: TrialRatio(26.76%)
+foo1: TrialEstimate(932.190 ms)
+foo2: TrialEstimate(600.007 ms)
+foo3: TrialEstimate(600.832 ms)
+condat: TrialEstimate(308.389 ms)
+pcondat: TrialEstimate(249.497 ms)
+=====================================================
+The a = 256
+foo2 vs foo1: TrialRatio(63.95%)
+foo3 vs foo1: TrialRatio(63.95%)
+condat vs foo1: TrialRatio(34.23%)
+pcondat vs foo1: TrialRatio(27.55%)
+foo1: TrialEstimate(939.278 ms)
+foo2: TrialEstimate(600.696 ms)
+foo3: TrialEstimate(576.177 ms)
+condat: TrialEstimate(321.505 ms)
+pcondat: TrialEstimate(258.741 ms)
+=====================================================
+The a = 512
+foo2 vs foo1: TrialRatio(58.87%)
+foo3 vs foo1: TrialRatio(58.87%)
+condat vs foo1: TrialRatio(30.88%)
+pcondat vs foo1: TrialRatio(26.96%)
+foo1: TrialEstimate(1.031 s)
+foo2: TrialEstimate(607.110 ms)
+foo3: TrialEstimate(571.522 ms)
+condat: TrialEstimate(318.416 ms)
+pcondat: TrialEstimate(278.043 ms)
+=====================================================
+The a = 1024
+foo2 vs foo1: TrialRatio(65.93%)
+foo3 vs foo1: TrialRatio(65.93%)
+condat vs foo1: TrialRatio(37.12%)
+pcondat vs foo1: TrialRatio(34.12%)
+foo1: TrialEstimate(910.120 ms)
+foo2: TrialEstimate(600.033 ms)
+foo3: TrialEstimate(575.284 ms)
+condat: TrialEstimate(337.881 ms)
+pcondat: TrialEstimate(310.530 ms)
+=====================================================

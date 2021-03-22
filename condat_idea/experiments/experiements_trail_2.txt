@@ -1,0 +1,396 @@
+
+#####################################################
+Trail 2 in standard norm distribution with 2 threads.
+The length of vector is: 100000
+foo2 vs foo1: TrialRatio(111.69%)
+foo3 vs foo1: TrialRatio(111.69%)
+condat vs foo1: TrialRatio(42.84%)
+pcondat vs foo1: TrialRatio(41.85%)
+foo1: TrialEstimate(6.638 ms)
+foo2: TrialEstimate(7.414 ms)
+foo3: TrialEstimate(6.532 ms)
+condat: TrialEstimate(2.844 ms)
+pcondat: TrialEstimate(2.778 ms)
+=====================================================
+The length of vector is: 500000
+foo2 vs foo1: TrialRatio(114.12%)
+foo3 vs foo1: TrialRatio(114.12%)
+condat vs foo1: TrialRatio(38.71%)
+pcondat vs foo1: TrialRatio(37.64%)
+foo1: TrialEstimate(33.489 ms)
+foo2: TrialEstimate(38.217 ms)
+foo3: TrialEstimate(33.880 ms)
+condat: TrialEstimate(12.963 ms)
+pcondat: TrialEstimate(12.606 ms)
+=====================================================
+The length of vector is: 1000000
+foo2 vs foo1: TrialRatio(102.95%)
+foo3 vs foo1: TrialRatio(102.95%)
+condat vs foo1: TrialRatio(38.11%)
+pcondat vs foo1: TrialRatio(36.60%)
+foo1: TrialEstimate(69.209 ms)
+foo2: TrialEstimate(71.251 ms)
+foo3: TrialEstimate(69.816 ms)
+condat: TrialEstimate(26.378 ms)
+pcondat: TrialEstimate(25.327 ms)
+=====================================================
+The length of vector is: 5000000
+foo2 vs foo1: TrialRatio(108.91%)
+foo3 vs foo1: TrialRatio(108.91%)
+condat vs foo1: TrialRatio(34.28%)
+pcondat vs foo1: TrialRatio(33.91%)
+foo1: TrialEstimate(401.435 ms)
+foo2: TrialEstimate(437.222 ms)
+foo3: TrialEstimate(422.005 ms)
+condat: TrialEstimate(137.630 ms)
+pcondat: TrialEstimate(136.145 ms)
+=====================================================
+The length of vector is: 10000000
+foo2 vs foo1: TrialRatio(88.55%)
+foo3 vs foo1: TrialRatio(88.55%)
+condat vs foo1: TrialRatio(27.47%)
+pcondat vs foo1: TrialRatio(29.15%)
+foo1: TrialEstimate(1.015 s)
+foo2: TrialEstimate(898.768 ms)
+foo3: TrialEstimate(861.647 ms)
+condat: TrialEstimate(278.796 ms)
+pcondat: TrialEstimate(295.893 ms)
+=====================================================
+The length of vector is: 50000000
+foo2 vs foo1: TrialRatio(103.57%)
+foo3 vs foo1: TrialRatio(103.57%)
+condat vs foo1: TrialRatio(32.91%)
+pcondat vs foo1: TrialRatio(33.24%)
+foo1: TrialEstimate(4.630 s)
+foo2: TrialEstimate(4.795 s)
+foo3: TrialEstimate(4.428 s)
+condat: TrialEstimate(1.524 s)
+pcondat: TrialEstimate(1.539 s)
+=====================================================
+The length of vector is: 100000000
+foo2 vs foo1: TrialRatio(128.00%)
+foo3 vs foo1: TrialRatio(128.00%)
+condat vs foo1: TrialRatio(36.87%)
+pcondat vs foo1: TrialRatio(31.93%)
+foo1: TrialEstimate(9.473 s)
+foo2: TrialEstimate(12.125 s)
+foo3: TrialEstimate(10.106 s)
+condat: TrialEstimate(3.492 s)
+pcondat: TrialEstimate(3.025 s)
+=====================================================
+#####################################################
+Trail 2 in standard norm distribution with 3 threads.
+The length of vector is: 100000
+foo2 vs foo1: TrialRatio(92.09%)
+foo3 vs foo1: TrialRatio(92.09%)
+condat vs foo1: TrialRatio(45.73%)
+pcondat vs foo1: TrialRatio(36.37%)
+foo1: TrialEstimate(6.323 ms)
+foo2: TrialEstimate(5.822 ms)
+foo3: TrialEstimate(5.274 ms)
+condat: TrialEstimate(2.891 ms)
+pcondat: TrialEstimate(2.299 ms)
+=====================================================
+The length of vector is: 500000
+foo2 vs foo1: TrialRatio(74.09%)
+foo3 vs foo1: TrialRatio(74.09%)
+condat vs foo1: TrialRatio(40.65%)
+pcondat vs foo1: TrialRatio(31.93%)
+foo1: TrialEstimate(32.920 ms)
+foo2: TrialEstimate(24.391 ms)
+foo3: TrialEstimate(23.247 ms)
+condat: TrialEstimate(13.382 ms)
+pcondat: TrialEstimate(10.512 ms)
+=====================================================
+The length of vector is: 1000000
+foo2 vs foo1: TrialRatio(84.88%)
+foo3 vs foo1: TrialRatio(84.88%)
+condat vs foo1: TrialRatio(38.67%)
+pcondat vs foo1: TrialRatio(29.95%)
+foo1: TrialEstimate(69.923 ms)
+foo2: TrialEstimate(59.351 ms)
+foo3: TrialEstimate(60.132 ms)
+condat: TrialEstimate(27.038 ms)
+pcondat: TrialEstimate(20.944 ms)
+=====================================================
+The length of vector is: 5000000
+foo2 vs foo1: TrialRatio(88.41%)
+foo3 vs foo1: TrialRatio(88.41%)
+condat vs foo1: TrialRatio(33.96%)
+pcondat vs foo1: TrialRatio(26.64%)
+foo1: TrialEstimate(401.668 ms)
+foo2: TrialEstimate(355.100 ms)
+foo3: TrialEstimate(325.391 ms)
+condat: TrialEstimate(136.411 ms)
+pcondat: TrialEstimate(106.997 ms)
+=====================================================
+The length of vector is: 10000000
+foo2 vs foo1: TrialRatio(84.83%)
+foo3 vs foo1: TrialRatio(84.83%)
+condat vs foo1: TrialRatio(33.35%)
+pcondat vs foo1: TrialRatio(26.86%)
+foo1: TrialEstimate(842.259 ms)
+foo2: TrialEstimate(714.495 ms)
+foo3: TrialEstimate(654.690 ms)
+condat: TrialEstimate(280.883 ms)
+pcondat: TrialEstimate(226.265 ms)
+=====================================================
+The length of vector is: 50000000
+foo2 vs foo1: TrialRatio(81.57%)
+foo3 vs foo1: TrialRatio(81.57%)
+condat vs foo1: TrialRatio(34.43%)
+pcondat vs foo1: TrialRatio(26.35%)
+foo1: TrialEstimate(4.630 s)
+foo2: TrialEstimate(3.777 s)
+foo3: TrialEstimate(3.660 s)
+condat: TrialEstimate(1.594 s)
+pcondat: TrialEstimate(1.220 s)
+=====================================================
+The length of vector is: 100000000
+foo2 vs foo1: TrialRatio(80.00%)
+foo3 vs foo1: TrialRatio(80.00%)
+condat vs foo1: TrialRatio(32.63%)
+pcondat vs foo1: TrialRatio(25.27%)
+foo1: TrialEstimate(9.494 s)
+foo2: TrialEstimate(7.596 s)
+foo3: TrialEstimate(7.036 s)
+condat: TrialEstimate(3.098 s)
+pcondat: TrialEstimate(2.399 s)
+=====================================================
+#####################################################
+Trail 2 in standard norm distribution with 4 threads.
+The length of vector is: 100000
+foo2 vs foo1: TrialRatio(82.61%)
+foo3 vs foo1: TrialRatio(82.61%)
+condat vs foo1: TrialRatio(44.87%)
+pcondat vs foo1: TrialRatio(34.94%)
+foo1: TrialEstimate(6.353 ms)
+foo2: TrialEstimate(5.248 ms)
+foo3: TrialEstimate(4.750 ms)
+condat: TrialEstimate(2.850 ms)
+pcondat: TrialEstimate(2.220 ms)
+=====================================================
+The length of vector is: 500000
+foo2 vs foo1: TrialRatio(65.20%)
+foo3 vs foo1: TrialRatio(65.20%)
+condat vs foo1: TrialRatio(41.34%)
+pcondat vs foo1: TrialRatio(29.70%)
+foo1: TrialEstimate(32.955 ms)
+foo2: TrialEstimate(21.487 ms)
+foo3: TrialEstimate(20.424 ms)
+condat: TrialEstimate(13.625 ms)
+pcondat: TrialEstimate(9.789 ms)
+=====================================================
+The length of vector is: 1000000
+foo2 vs foo1: TrialRatio(80.00%)
+foo3 vs foo1: TrialRatio(80.00%)
+condat vs foo1: TrialRatio(39.47%)
+pcondat vs foo1: TrialRatio(27.78%)
+foo1: TrialEstimate(69.373 ms)
+foo2: TrialEstimate(55.497 ms)
+foo3: TrialEstimate(50.678 ms)
+condat: TrialEstimate(27.381 ms)
+pcondat: TrialEstimate(19.275 ms)
+=====================================================
+The length of vector is: 5000000
+foo2 vs foo1: TrialRatio(79.26%)
+foo3 vs foo1: TrialRatio(79.26%)
+condat vs foo1: TrialRatio(34.70%)
+pcondat vs foo1: TrialRatio(24.56%)
+foo1: TrialEstimate(400.417 ms)
+foo2: TrialEstimate(317.381 ms)
+foo3: TrialEstimate(293.443 ms)
+condat: TrialEstimate(138.942 ms)
+pcondat: TrialEstimate(98.323 ms)
+=====================================================
+The length of vector is: 10000000
+foo2 vs foo1: TrialRatio(79.04%)
+foo3 vs foo1: TrialRatio(79.04%)
+condat vs foo1: TrialRatio(33.80%)
+pcondat vs foo1: TrialRatio(24.89%)
+foo1: TrialEstimate(834.700 ms)
+foo2: TrialEstimate(659.742 ms)
+foo3: TrialEstimate(623.551 ms)
+condat: TrialEstimate(282.107 ms)
+pcondat: TrialEstimate(207.778 ms)
+=====================================================
+The length of vector is: 50000000
+foo2 vs foo1: TrialRatio(73.93%)
+foo3 vs foo1: TrialRatio(73.93%)
+condat vs foo1: TrialRatio(34.72%)
+pcondat vs foo1: TrialRatio(25.41%)
+foo1: TrialEstimate(4.634 s)
+foo2: TrialEstimate(3.426 s)
+foo3: TrialEstimate(3.211 s)
+condat: TrialEstimate(1.609 s)
+pcondat: TrialEstimate(1.178 s)
+=====================================================
+The length of vector is: 100000000
+foo2 vs foo1: TrialRatio(70.45%)
+foo3 vs foo1: TrialRatio(70.45%)
+condat vs foo1: TrialRatio(33.56%)
+pcondat vs foo1: TrialRatio(23.56%)
+foo1: TrialEstimate(9.449 s)
+foo2: TrialEstimate(6.657 s)
+foo3: TrialEstimate(6.262 s)
+condat: TrialEstimate(3.171 s)
+pcondat: TrialEstimate(2.226 s)
+=====================================================
+#####################################################
+Trail 2 in standard norm distribution with 5 threads.
+The length of vector is: 100000
+foo2 vs foo1: TrialRatio(70.33%)
+foo3 vs foo1: TrialRatio(70.33%)
+condat vs foo1: TrialRatio(40.99%)
+pcondat vs foo1: TrialRatio(29.06%)
+foo1: TrialEstimate(6.967 ms)
+foo2: TrialEstimate(4.900 ms)
+foo3: TrialEstimate(4.476 ms)
+condat: TrialEstimate(2.856 ms)
+pcondat: TrialEstimate(2.024 ms)
+=====================================================
+The length of vector is: 500000
+foo2 vs foo1: TrialRatio(52.36%)
+foo3 vs foo1: TrialRatio(52.36%)
+condat vs foo1: TrialRatio(41.44%)
+pcondat vs foo1: TrialRatio(25.72%)
+foo1: TrialEstimate(36.750 ms)
+foo2: TrialEstimate(19.241 ms)
+foo3: TrialEstimate(18.504 ms)
+condat: TrialEstimate(15.229 ms)
+pcondat: TrialEstimate(9.454 ms)
+=====================================================
+The length of vector is: 1000000
+foo2 vs foo1: TrialRatio(47.57%)
+foo3 vs foo1: TrialRatio(47.57%)
+condat vs foo1: TrialRatio(32.65%)
+pcondat vs foo1: TrialRatio(20.77%)
+foo1: TrialEstimate(89.991 ms)
+foo2: TrialEstimate(42.809 ms)
+foo3: TrialEstimate(48.201 ms)
+condat: TrialEstimate(29.386 ms)
+pcondat: TrialEstimate(18.690 ms)
+=====================================================
+The length of vector is: 5000000
+foo2 vs foo1: TrialRatio(70.96%)
+foo3 vs foo1: TrialRatio(70.96%)
+condat vs foo1: TrialRatio(31.76%)
+pcondat vs foo1: TrialRatio(27.09%)
+foo1: TrialEstimate(462.534 ms)
+foo2: TrialEstimate(328.221 ms)
+foo3: TrialEstimate(334.141 ms)
+condat: TrialEstimate(146.891 ms)
+pcondat: TrialEstimate(125.289 ms)
+=====================================================
+The length of vector is: 10000000
+foo2 vs foo1: TrialRatio(68.89%)
+foo3 vs foo1: TrialRatio(68.89%)
+condat vs foo1: TrialRatio(30.63%)
+pcondat vs foo1: TrialRatio(20.19%)
+foo1: TrialEstimate(972.507 ms)
+foo2: TrialEstimate(669.942 ms)
+foo3: TrialEstimate(635.864 ms)
+condat: TrialEstimate(297.923 ms)
+pcondat: TrialEstimate(196.392 ms)
+=====================================================
+The length of vector is: 50000000
+foo2 vs foo1: TrialRatio(75.36%)
+foo3 vs foo1: TrialRatio(75.36%)
+condat vs foo1: TrialRatio(29.31%)
+pcondat vs foo1: TrialRatio(19.01%)
+foo1: TrialEstimate(5.755 s)
+foo2: TrialEstimate(4.337 s)
+foo3: TrialEstimate(3.757 s)
+condat: TrialEstimate(1.687 s)
+pcondat: TrialEstimate(1.094 s)
+=====================================================
+The length of vector is: 100000000
+foo2 vs foo1: TrialRatio(59.47%)
+foo3 vs foo1: TrialRatio(59.47%)
+condat vs foo1: TrialRatio(30.28%)
+pcondat vs foo1: TrialRatio(19.00%)
+foo1: TrialEstimate(10.624 s)
+foo2: TrialEstimate(6.318 s)
+foo3: TrialEstimate(5.892 s)
+condat: TrialEstimate(3.217 s)
+pcondat: TrialEstimate(2.019 s)
+=====================================================
+#####################################################
+Trail 2 in standard norm distribution with 6 threads.
+The length of vector is: 100000
+foo2 vs foo1: TrialRatio(74.09%)
+foo3 vs foo1: TrialRatio(74.09%)
+condat vs foo1: TrialRatio(46.65%)
+pcondat vs foo1: TrialRatio(35.72%)
+foo1: TrialEstimate(6.334 ms)
+foo2: TrialEstimate(4.693 ms)
+foo3: TrialEstimate(4.203 ms)
+condat: TrialEstimate(2.955 ms)
+pcondat: TrialEstimate(2.262 ms)
+=====================================================
+The length of vector is: 500000
+foo2 vs foo1: TrialRatio(55.80%)
+foo3 vs foo1: TrialRatio(55.80%)
+condat vs foo1: TrialRatio(40.49%)
+pcondat vs foo1: TrialRatio(26.97%)
+foo1: TrialEstimate(33.282 ms)
+foo2: TrialEstimate(18.571 ms)
+foo3: TrialEstimate(17.625 ms)
+condat: TrialEstimate(13.477 ms)
+pcondat: TrialEstimate(8.976 ms)
+=====================================================
+The length of vector is: 1000000
+foo2 vs foo1: TrialRatio(53.63%)
+foo3 vs foo1: TrialRatio(53.63%)
+condat vs foo1: TrialRatio(38.08%)
+pcondat vs foo1: TrialRatio(24.80%)
+foo1: TrialEstimate(71.160 ms)
+foo2: TrialEstimate(38.165 ms)
+foo3: TrialEstimate(37.045 ms)
+condat: TrialEstimate(27.101 ms)
+pcondat: TrialEstimate(17.646 ms)
+=====================================================
+The length of vector is: 5000000
+foo2 vs foo1: TrialRatio(72.75%)
+foo3 vs foo1: TrialRatio(72.75%)
+condat vs foo1: TrialRatio(33.76%)
+pcondat vs foo1: TrialRatio(23.48%)
+foo1: TrialEstimate(409.784 ms)
+foo2: TrialEstimate(298.114 ms)
+foo3: TrialEstimate(278.347 ms)
+condat: TrialEstimate(138.351 ms)
+pcondat: TrialEstimate(96.204 ms)
+=====================================================
+The length of vector is: 10000000
+foo2 vs foo1: TrialRatio(68.92%)
+foo3 vs foo1: TrialRatio(68.92%)
+condat vs foo1: TrialRatio(32.87%)
+pcondat vs foo1: TrialRatio(21.20%)
+foo1: TrialEstimate(881.443 ms)
+foo2: TrialEstimate(607.497 ms)
+foo3: TrialEstimate(562.659 ms)
+condat: TrialEstimate(289.748 ms)
+pcondat: TrialEstimate(186.836 ms)
+=====================================================
+The length of vector is: 50000000
+foo2 vs foo1: TrialRatio(64.32%)
+foo3 vs foo1: TrialRatio(64.32%)
+condat vs foo1: TrialRatio(34.65%)
+pcondat vs foo1: TrialRatio(21.56%)
+foo1: TrialEstimate(4.662 s)
+foo2: TrialEstimate(2.998 s)
+foo3: TrialEstimate(2.844 s)
+condat: TrialEstimate(1.615 s)
+pcondat: TrialEstimate(1.005 s)
+=====================================================
+The length of vector is: 100000000
+foo2 vs foo1: TrialRatio(63.00%)
+foo3 vs foo1: TrialRatio(63.00%)
+condat vs foo1: TrialRatio(35.53%)
+pcondat vs foo1: TrialRatio(20.93%)
+foo1: TrialEstimate(9.465 s)
+foo2: TrialEstimate(5.963 s)
+foo3: TrialEstimate(5.411 s)
+condat: TrialEstimate(3.363 s)
+pcondat: TrialEstimate(1.981 s)
+=====================================================
