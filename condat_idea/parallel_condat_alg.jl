@@ -47,15 +47,49 @@ end
 
 
 function pcondat(data,a)
+    #if length(data)<=10_000
+    #    p=condat(data,a)
+    #    return p
+    #end
     v=pscanLf(data,a)
+    global p=(sum(v)-a)/length(v)
     while true
-        global p=(sum(v)-a)/length(v)
         l=length(v)
-        @threads for i in 1:l
-            x=popfirst!(v)
-            if x>p
-                push!(v,x)
+        global p
+        if l <= 3_000
+            let
+                r=0
+                for i in 1:l
+                    x=popfirst!(v)
+                    if x <= p
+                        r+=1
+                        p=p+(p-x)/(l-r)
+                    else
+                        push!(v,x)
+                    end
+                end
             end
+        else
+            num=nthreads()
+            s=zeros(num)
+            u=[]
+            pi=[]
+            for i in 1:num
+                push!(u,[])
+                push!(pi,p)
+            end
+            @threads for i in 1:l
+                j=threadid()
+                if v[i]>pi[j]
+                    pi[j]=pi[j]+(v[i]-pi[j])/(length(u[j])+1)
+                    push!(u[j],v[i])
+                end
+            end
+            v=[]
+            for i in 1:num
+                v=cat(v,u[i],dims=1)
+            end
+            p=(sum(v)-a)/length(v)
         end
         if l==length(v)
             break
@@ -63,3 +97,4 @@ function pcondat(data,a)
     end
     return p
 end
+
