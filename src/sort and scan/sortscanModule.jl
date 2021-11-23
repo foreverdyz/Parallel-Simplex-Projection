@@ -1,6 +1,6 @@
 #sortscanModule.jl
 """
-# sortscan: basic sort and scan idea for standard simplex project_res
+# sortscan: basic sort and scan idea for scaling standard simplex projection
 
     sortscan_s(data,a)
     sortscan_p(data,a)
