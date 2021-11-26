@@ -1,5 +1,6 @@
 #parallel_scan.jl
 using Base.Threads
+using BangBang
 include("local_scan.jl")
 
 """
@@ -21,7 +22,7 @@ function parallel_scan(y::AbstractVector, a::Int = 1)::AbstractVector
         en=min(threadid()*d,l)
         v=local_scan(y[st:en],a)
         lock(spl)
-        u=[u..., v...]
+        append!!(u, v)
         unlock(spl)
     end
     return u
