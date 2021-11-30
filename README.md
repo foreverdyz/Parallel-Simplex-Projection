@@ -5,9 +5,7 @@
 [Project Link](https://github.com/foreverdyz/Parallel-Simplex-Projection)
 
 Consider a standard scaling simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=b">,
-```math
 <img src="https://render.githubusercontent.com/render/math?math=\Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\}">;
-```
 we want to porject a vector $d$ onto such simplex. There have been some known method, e.g.
 
 We propose a distributed structure to parallel simplex projection, and develop parallel methods based on some known serial algorithms. Our contributions includes:
