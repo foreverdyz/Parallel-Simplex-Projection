@@ -1,8 +1,8 @@
 # Parallel Simplex Projection
 
-##  Parallel Algorithm for Projection onto a Simplex
-
 [Project Link](https://github.com/foreverdyz/Parallel-Simplex-Projection)
+
+##  Parallel Algorithm for Projection onto a Simplex
 
 Consider a standard scaling simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=b">,
 
@@ -16,3 +16,16 @@ We propose a distributed structure to parallel simplex projection, and develop p
 - on the ground of our theoretical work, we propose a distributed structure for simplex projection;
 - apply novel structure to parallelize some known serial algorithms, see e.g. [Michelot](https://dl.acm.org/doi/abs/10.5555/3228358.3228653), [Condat](https://link.springer.com/article/10.1007/s10107-015-0946-6), etc.;
 - analyze complexity for these new parallel algorithms.
+
+## Extension of Simplex Projection
+
+There are some projections onto other polyhedra can leverage projection onto a standard scaling simplex:
+- <img src="https://render.githubusercontent.com/render/math?math=\ell_1> ball">;
+- parity polytope;
+- weighted simplex and weighted <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
+
+### Some Applications
+
+- LP Decoding;
+- Lasso, which we implement by [SPG](https://epubs.siam.org/doi/10.1137/S1052623497330963#:~:text=Nonmonotone%20projected%20gradient%20techniques%20are,functions%20on%20closed%20convex%20sets.&text=In%20particular%2C%20the%20nonmonotone%20strategy,to%20accelerate%20the%20convergence%20process.);
+  
