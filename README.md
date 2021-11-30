@@ -4,7 +4,7 @@
 
 [Project Link](https://github.com/foreverdyz/Parallel-Simplex-Projection)
 
-Consider a standard scaling simplex with scaling factor $b$,
+Consider a standard scaling simplex with scaling factor ![formula](https://render.githubusercontent.com/render/math?math=b),
 ```math
 \Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\};
 ```
