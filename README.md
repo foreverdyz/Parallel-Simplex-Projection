@@ -6,7 +6,7 @@
 
 Consider a standard scaling simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=b">,
 ```math
-\Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\};
+<img src="https://render.githubusercontent.com/render/math?math=\Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\}">;
 ```
 we want to porject a vector $d$ onto such simplex. There have been some known method, e.g.
 
