@@ -4,7 +4,7 @@
 
 ##  Parallel Algorithm for Projection onto a Simplex
 
-Consider a standard scaling simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=\large b"> b,
+Consider a standard scaling simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=\large b">,
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\}">;
 
