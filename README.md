@@ -20,7 +20,7 @@ We propose a distributed structure to parallel simplex projection, and develop p
 ## Extension of Simplex Projection
 
 There are some projections onto other polyhedra can leverage projection onto a standard scaling simplex:
-- <img src="https://render.githubusercontent.com/render/math?math=\ell_1> ball">;
+- <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
 - parity polytope;
 - weighted simplex and weighted <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
 
