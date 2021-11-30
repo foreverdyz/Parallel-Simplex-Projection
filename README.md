@@ -2,4 +2,4 @@
 
 ##  Parallel Algorithm for Projection onto a Simplex
 
-![Build Status]
+[![Build Status]]
