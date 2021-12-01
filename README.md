@@ -4,7 +4,7 @@
 
 ##  Parallel Algorithm for Projection onto a Simplex
 
-Consider a standard scaling simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=\large b">,
+Consider a scaled standard simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=\large b">,
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\}">;
 
@@ -19,7 +19,7 @@ We propose a distributed structure to parallel simplex projection, and develop p
 
 ## Extension of Simplex Projection
 
-There are some projections onto other polyhedra can leverage projection onto a standard scaling simplex:
+There are some projections onto other polyhedra can leverage projection onto a scaled standard simplex:
 - <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
 - parity polytope;
 - weighted simplex and weighted <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
