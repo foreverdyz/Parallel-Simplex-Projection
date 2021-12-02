@@ -6,4 +6,5 @@ This folder includes
 - a general algorithm to calculate projection by pivot and original vector;
 - a benchmark test script for these methods.
 
-## benchmark
+## benchmark_l1ball.jl
+This script test project https://render.githubusercontent.com/render/math?math=|d| 
