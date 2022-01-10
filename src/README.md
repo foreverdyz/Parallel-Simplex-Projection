@@ -14,3 +14,5 @@ This script test projections ![formula](https://render.githubusercontent.com/ren
 ## Parity Polytope
 
 ### benchmark_paritypolytop.jl
+
+## Weighted Simplex & Weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball
