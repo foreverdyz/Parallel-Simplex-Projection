@@ -1,8 +1,8 @@
 # Parallel Simplex Projection
 
-[Project Link](https://github.com/foreverdyz/Parallel-Simplex-Projection)
+[Project Link](https://arxiv.org/pdf/2204.08153)
 
-##  Parallel Algorithm for Projection onto a Simplex
+##  Parallelization of Projection onto a Simplex
 
 Consider a scaled standard simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=\large b">,
 
