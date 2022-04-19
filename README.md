@@ -1,6 +1,6 @@
 # Parallel Simplex Projection
 
-[Project Link](https://arxiv.org/pdf/2204.08153)
+[Paper Link](https://arxiv.org/pdf/2204.08153)
 
 ##  Parallelization of Projection onto a Simplex
 
