@@ -4,7 +4,7 @@ using Base.Threads
     serial_l1ball(f,data,a)
     parallel_l1ball(f,data,a)
 Project `data` onto l1 ball with scaling factor `a`. `f` is the underlying
-simplex projection method use to finish the l1 ball projection.
+simplex projection method used to finish the l1 ball projection.
 
 # Notations
 Change function method `f` to use different simplex projection methods
