@@ -23,8 +23,11 @@ julia> parallel_michelot([1,1], 1)
 [0.5,0.5]
 ```
 """
-function parallel_michelot(data::AbstractVector,a::Int = 1)::AbstractVector
+function parallel_michelot(data::AbstractVector,a::Real = 1)::AbstractVector
+    #parallel projection for subvectors
     y=parallel_scan(data, a)
+    #final projection in serial
     p=serial_scan(y, a)
+    #output projection result
     return projectres_p(data,p)
 end

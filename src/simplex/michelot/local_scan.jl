@@ -16,18 +16,23 @@ julia> serial_scan([1,1,0],1)
 [1,1]
 ```
 """
-function local_scan(y::AbstractVector, a::Int = 1)::AbstractVector
-    (l = length(y))::Int
-    (p = (sum(y)-a)/l)::AbstractFloat
+function local_scan(y::AbstractVector, a::Real = 1)::AbstractVector
+    #record length
+    l = length(y)
+    #initialize pivot
+    p = (sum(y)-a)/l
     while true
+        #check all terms in current y
         for i in 1:l
             if (x=popfirst!(y))>p
                 push!(y,x)
             end
         end
+        #check termination condition
         if (lnew=length(y))==l
             return y
         end
+        #update pivot
         p=(sum(y)-a)/(l=lnew)
     end
 end

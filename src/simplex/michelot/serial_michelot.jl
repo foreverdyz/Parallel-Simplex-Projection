@@ -22,8 +22,9 @@ julia> serial_michelot([1,1], 1)
 ```
 """
 
-function serial_michelot(data::AbstractVector, a::Int = 1):: AbstractVector
-    #data[1:end] will avoid `serial_scan` change original data
+function serial_michelot(data::AbstractVector, a::Real = 1):: AbstractVector
+    #data[1:end] is a copy step, which will avoid `serial_scan` changes original data
     p=serial_scan(data[1:end], a)
+    #output projection result
     return projectres_s(data, p)
 end
