@@ -3,7 +3,7 @@
 using BenchmarkTools, Random, Distributions
 BenchmarkTools.DEFAULT_PARAMETERS.gcsample = true
 BenchmarkTools.DEFAULT_PARAMETERS.samples = 100
-BenchmarkTools.DEFAULT_PARAMETERS.seconds = 10
+BenchmarkTools.DEFAULT_PARAMETERS.seconds = 25
 include("simplex/sort and scan/sortscanModule.jl")
 include("simplex/michelot/michelotModule.jl")
 include("simplex/condat/condatModule.jl")
