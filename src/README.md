@@ -12,10 +12,15 @@ This folder includes
 Define two projection templetes for ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball. You can use simplex projection methods to replace ![formula](https://render.githubusercontent.com/render/math?math=f) in function argument.
 
 ### l1ball_benchmark.jl
-Use @benchmark to test ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball projections. There are two results, res1 is the runtime for ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball projection, and res2 is the runtime for the subroutine, projection absolute values of input onto simplex.
+Use @benchmark to test ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball projections. There are two results, res1 is the runtime for ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball projection, and res2 is the runtime for the subroutine, projecting absolute values of input onto simplex.
 
 ## Parity Polytope
 
-### benchmark_paritypolytop.jl
+### parity.jl
+Define two projection templetes for parity polytope. You can use simplex projection methods to replace ![formula](https://render.githubusercontent.com/render/math?math=fun) in function argument.
+
+### parity_benchmark.jl
+Use @benchmark to test parity polytope projections. There are two results, res1 is the runtime for parity polytope projection, and res2 is the runtime for the subroutine, projecting input onto simplex.
+
 
 ## Weighted Simplex & Weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball
