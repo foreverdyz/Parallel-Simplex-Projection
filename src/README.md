@@ -4,7 +4,7 @@
 This folder includes
 - three known methods to project onto a scaled standard simplex, both serial and parallel versions;
 - a general algorithm to calculate ![formula](https://render.githubusercontent.com/render/math?math=v^*) by pivot and original vector ![formula](https://render.githubusercontent.com/render/math?math=d) ;
-- a benchmark test script for these methods.
+- two benchmark tests script for these methods.
 
 ## ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball
 
@@ -24,3 +24,7 @@ Use @benchmark to test parity polytope projections. There are two results, res1 
 
 
 ## Weighted Simplex & Weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball
+This folder includes
+- three known methods to project onto a scaled standard simplex, both serial and parallel versions, analogous to simplex projection;
+- two projection templetes for weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball;
+- benchmark tests script for these methods.
