@@ -26,6 +26,5 @@ There are some projections onto other polyhedra can leverage projection onto a s
 
 ### Some Applications
 
-- LP Decoding;
-- LASSO, which we implement [SPG](https://epubs.siam.org/doi/10.1137/S1052623497330963#:~:text=Nonmonotone%20projected%20gradient%20techniques%20are,functions%20on%20closed%20convex%20sets.&text=In%20particular%2C%20the%20nonmonotone%20strategy,to%20accelerate%20the%20convergence%20process.) algorithm to solve;
+- LASSO, which we implement Projected Gradient Descent (PGD) algorithm to solve Lasso problem;
   
