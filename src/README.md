@@ -9,9 +9,10 @@ This folder includes
 ## ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball
 
 ### l1ball.jl
+Define two projection templetes for ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball. You can use simplex projection methods to replace ![formula](https://render.githubusercontent.com/render/math?math=f) in function argument.
 
 ### l1ball_benchmark.jl
-This script test projections ![formula](https://render.githubusercontent.com/render/math?math=|d|) onto a scaled standard simple, which is a cricurial step in projection onto ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball with methods from Simplex folder.
+Use @benchmark to test ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball projections. There are two results, res1 is the runtime for ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball projection, and res2 is the runtime for the subroutine, projection absolute values of input onto simplex.
 
 ## Parity Polytope
 
