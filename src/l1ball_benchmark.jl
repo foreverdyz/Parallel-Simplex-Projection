@@ -19,6 +19,10 @@ using .condat
     benchball_condat()
 Use @benchmark to test seven methods in N(0,1) with sample sizes n=100_000,
 1_000_000, 10_000_000
+
+# Notations
+res1 is the runtime for projection onto l1 ball, and res2 is the runtime for
+projection onto the simplex
 """
 function benchball_sortscan()
     let
@@ -28,7 +32,9 @@ function benchball_sortscan()
             #set random seed
             Random.seed!(12345);
             #test
+            #l1 ball projection
             res1 = @benchmark serial_l1ball(sortscan_s, $(rand(Normal(0, 1),i)), 1)
+            #simplex projection
             res2 = @benchmark sortscan_s($(abs.(rand(Normal(0, 1), i))), 1)
             println(mean(res1)," + ",mean(res2))
             Random.seed!(12345);
