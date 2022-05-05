@@ -9,7 +9,7 @@ BenchmarkTools.DEFAULT_PARAMETERS.seconds = 10
 using .sortscan
 using .michelot
 using .condat
-
+#set sample size
 n=1_000_000
 
 #unit vector d=(1,0,...,0)
@@ -34,6 +34,7 @@ println(mean(res4))
 println(mean(res5))
 println(mean(res6))
 println(mean(res7))
+
 #Big a (a=8)
 Random.seed!(12345);
 res1=@benchmark sortscan_s($(rand(Normal(0,1),n)),8);
@@ -56,7 +57,8 @@ println(mean(res4))
 println(mean(res5))
 println(mean(res6))
 println(mean(res7))
-#Mixing Data
+
+#Outlier Data, N(0,0.001) with 1
 Random.seed!(12345);
 res1=@benchmark sortscan_s($(shuffle(push!(rand(Normal(0,0.001),n-1),1))),1);
 Random.seed!(12345);
