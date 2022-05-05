@@ -15,15 +15,19 @@ julia> scansorted([1,1],1)
 0.5
 ```
 """
-function scansorted(y::AbstractVector, a::Int=1)::AbstractFloat
+function scansorted(y::AbstractVector, a::Real = 1)::AbstractFloat
+    #initialize the partial summation
     s = -a
+    #initialize the length
     l = 0
     for x in y
         if (s+x)/(l+1) > x
             break
         end
+        #update summation and length
         s += x
         l += 1
     end
+    #output the pivot
     return s/l
 end

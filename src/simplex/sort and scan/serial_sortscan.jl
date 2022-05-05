@@ -21,8 +21,11 @@ julia> serial_sortscan([1,1],1)
 ```
 """
 
-function serial_sortscan(data::AbstractVector, a::Int = 1)::AbstractVector
+function serial_sortscan(data::AbstractVector, a::Real = 1)::AbstractVector
+    #using quicksort here
     y = sort(data; alg=QuickSort, rev = true)
+    #checking sorted terms to find τ (the final pivot we want in our paper)
     p = scansorted(y,a)
+    #get projection result
     return projectres_s(data,p)
 end
