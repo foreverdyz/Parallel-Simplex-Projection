@@ -8,6 +8,7 @@
 module condat
 export condat_s, condat_p
     include("projectres/projectresModule.jl")
+    #run a subfile here since both serial and parallel function need it
     include("checkL.jl")
     include("serial_condat.jl")
     """
@@ -26,7 +27,7 @@ export condat_s, condat_p
     [0.5,0.5]
     ```
     """
-    condat_s(data::AbstractVector, a::Int = 1) = serial_condat(data, a)
+    condat_s(data::AbstractVector, a::Real = 1) = serial_condat(data, a)
 
     include("parallel_condat.jl")
     """
@@ -44,5 +45,5 @@ export condat_s, condat_p
         to project
     ```
     """
-    condat_p(data::AbstractVector, a::Int = 1) = parallel_condat(data, a)
+    condat_p(data::AbstractVector, a::Real = 1) = parallel_condat(data, a)
 end  # module condat

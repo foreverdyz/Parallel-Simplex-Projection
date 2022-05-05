@@ -24,8 +24,11 @@ julia> serial_condat([1,1], 1)
 [0.5,0.5]
 ```
 """
-function serial_condat(data::AbstractVector, a::Int = 1)::AbstractVector
+function serial_condat(data::AbstractVector, a::Real = 1)::AbstractVector
+    #filter
     y = serial_filter(data, a)
+    #after filter, Condat's method scans and checks remaining rems
     p = checkL(y, a)
+    #output projection result
     return projectres_s(data, p)
 end

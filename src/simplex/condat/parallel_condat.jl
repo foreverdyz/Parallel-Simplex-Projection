@@ -18,8 +18,11 @@ Run `include("checkL.jl")` if `checkL not defined`.
     to project
 ```
 """
-function parallel_condat(data::AbstractVector, a::Int = 1)::AbstractVector
+function parallel_condat(data::AbstractVector, a::Real = 1)::AbstractVector
+    #parallel filter
     y = parallel_filter(data, a)
+    #check remaining terms
     p = checkL(y, a)
+    #output projection result
     return projectres_p(data, p)
 end
