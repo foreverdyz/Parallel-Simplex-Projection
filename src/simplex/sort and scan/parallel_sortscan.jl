@@ -23,18 +23,22 @@ julia> parallel_sortscant([1,1],1)
 [0.5,0.5]
 ```
 """
-function parallel_sortscan(data::AbstractVector,a::Int = 1)::AbstractVector
-    #alg=ThreadsX.MergeSort will sort `data` parallel
+function parallel_sortscan(data::AbstractVector,a::Real = 1)::AbstractVector
+    #alg=ThreadsX.MergeSort will sort `data` parallel based on mergesort
     y=sort(data; alg = ThreadsX.MergeSort, rev = true)
+    #copy(y) to avoid change y in parallel_prefixsum!()
     prefixS=copy(y)
+    #calculate prefix sum
     parallel_prefixsum!(prefixS)
     #calculate pivot
     (p = (prefixS[end]-a)/length(y))::AbstractFloat
+    #checking partial summation
     for i in 1:length(y)
         if (prefixS[i]-a)/i > y[i]
             p = (prefixS[i-1]-a)/(i-1)
             break
         end
     end
+    #output projection result
     return projectres_p(data,p)
 end
