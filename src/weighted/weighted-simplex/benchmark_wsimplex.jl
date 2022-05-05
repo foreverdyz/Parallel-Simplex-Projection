@@ -9,6 +9,14 @@ include("wsimplexModule.jl")
 
 using. wsimplex
 
+"""
+    benchwsimplex(n)
+Use @benchmark to test six methods to projection onto the weighted simplex with
+input vector is from N(0,1) and weight is from U[0,1].
+
+# Arguments
+- 'n::Int': sample size
+"""
 function benchwsimplex(n::Int)
     Random.seed!(12345);
     res1=@benchmark wsortscan_s($(rand(Normal(0, 1), n)), $(rand(n)), 1);
@@ -31,3 +39,10 @@ function benchwsimplex(n::Int)
     res2=@benchmark wcondat_p($(rand(Normal(0, 1), n)), $(rand(n)), 1);
     println("wcondat_p, size of $n, runtime ", mean(res2))
 end
+
+#run experiments
+benchwsimplex(100_000)
+benchwsimplex(500_000)
+benchwsimplex(1_000_000)
+benchwsimplex(5_000_000)
+benchwsimplex(10_000_000)
