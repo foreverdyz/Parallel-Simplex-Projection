@@ -38,8 +38,10 @@ This folder includes
 ## Lasso
 
 ### lasso.jl
+Define two methods, one serial and the other one is parallel, to implement PGD algorithm for Lasso Problem.
 
 ### lasso_benchmark.jl
+
 
 ### lasso_realdata.jl
 
