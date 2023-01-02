@@ -18,7 +18,7 @@ function lasso_serial(A::AbstractArray, b::AbstractVector, x0::AbstractVector, a
     let
         x=x0
         #stepsize
-        α=0.05 # setpsize α can be 0.05 or 0.01
+        α=0.05 # setpsize α can be 0.05 or 0.01, and in our paper, 0.01 for lasso_benchmark.jl and 0.05 for lasso_realdata.jl
         #iteration number
         i=0
         while i < 10
