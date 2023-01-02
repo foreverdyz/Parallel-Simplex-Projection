@@ -44,7 +44,7 @@ Define two methods, one serial and the other one is parallel, to implement PGD a
 Use @benchmark to test runtimes for solving Lasso problem with different simplex projection methods based on both serial and parallel structures.
 
 ### lasso_realdata.jl
-
+Use @benchmark to test runtimes for Lassor solvers on the three real datasets metioned in our paper. When you use this code, please first uncomment the command at the beginning of the script (commands for read csv data).
 
 ## Theory Check
 This folder includes three tests corresponding to three experiemnts in Section 5.1 Thesting Theoretical Bounds from our paper.
