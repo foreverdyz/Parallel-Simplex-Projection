@@ -6,6 +6,10 @@
 
 This file can help users install and import required modules for our project. We commented commands for "pyplot", and you can change this setting if you need to use this package.
 
+## Data Link
+
+Data we used can be found in https://buckeyemailosu-my.sharepoint.com/:f:/g/personal/dai_651_buckeyemail_osu_edu/Esa87bT81VtLrF81T-UzSAkBniuiy5VHWG2rMgyKHZ7Q3A?e=cUMbbC
+
 ## Simplex
 This folder includes
 - three known methods to project onto a scaled standard simplex, both serial and parallel versions;
