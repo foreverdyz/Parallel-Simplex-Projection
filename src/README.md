@@ -1,6 +1,9 @@
 # src
 
 ## Required Modules
+
+### required_modules.jl
+
 This file can help users install and import required modules for our project. We commented commands for "pyplot", and you can change this setting if you need to use this package.
 
 ## Simplex
