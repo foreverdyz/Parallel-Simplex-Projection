@@ -18,7 +18,7 @@ function lasso_serial(A::AbstractArray, b::AbstractVector, x0::AbstractVector, a
     let
         x=x0
         #stepsize
-        α=0.05
+        α=0.05 # setpsize α can be 0.05 or 0.01
         #iteration number
         i=0
         while i < 10
@@ -59,7 +59,7 @@ You can change `f` to use different simplex methods.
 function lasso_parallel(A,::AbstractArray b::AbstractVector, x0::AbstractVector, a::Real = 1, f::Function)
     let
         x=x0
-        α=0.05
+        α=0.05 # setpsize α can be 0.05 or 0.01
         i=0
         while i < 10
             g= A'*(A*x+b)
