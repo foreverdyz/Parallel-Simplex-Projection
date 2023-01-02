@@ -17,21 +17,24 @@ using .condat
 
 #news data
 #data = readdlm("news.csv", ',')
+
 #avazu-app data
 #data = readdlm("avazu.csv", ',')
+
 #kdda data
-data =  readdlm("kdda.csv", ',')
+#data =  readdlm("kdda.csv", ',')
+
 m,i = size(data)
 b = data[1: 10, 1]
 data = data[:, 2:i]
 i = i - 1
 data = data[1:10, :]
 m = 10
-#=
+
 for j in 1:m
     data[j,:] = data[j,:]/findmax(data[j,:])[1]
 end
-=#
+
 #=
 Random.seed!(12345);
 res1 = @benchmark lasso_serial(data, b, $(rand(Normal(0, 1),i)), 1, sortscan_s);
