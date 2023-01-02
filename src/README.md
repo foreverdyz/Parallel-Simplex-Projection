@@ -23,7 +23,7 @@ Define two projection templetes for parity polytope. You can use simplex project
 Use @benchmark to test parity polytope projections. There are two results, res1 is the runtime for parity polytope projection, and res2 is the runtime for the subroutine, projecting input onto simplex.
 
 
-## Weighted Simplex & Weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball
+## Weighted (Simplex & Weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball)
 This folder includes
 - three known methods to project onto a scaled standard simplex, both serial and parallel versions, analogous to simplex projection;
 - two projection templetes for weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball;
