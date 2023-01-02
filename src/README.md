@@ -28,3 +28,6 @@ This folder includes
 - three known methods to project onto a scaled standard simplex, both serial and parallel versions, analogous to simplex projection;
 - two projection templetes for weighted ![formula](https://render.githubusercontent.com/render/math?math=\ell_1) ball;
 - benchmark tests script for these methods.
+
+## Theory Check
+This folder includes three tests corresponding to three experiemnts in Section 5.1 Thesting Theoretical Bounds from our paper.
