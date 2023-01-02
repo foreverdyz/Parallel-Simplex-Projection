@@ -41,9 +41,10 @@ This folder includes
 Define two methods, one serial and the other one is parallel, to implement PGD algorithm for Lasso Problem.
 
 ### lasso_benchmark.jl
-
+Use @benchmark to test runtimes for solving Lasso problem with different simplex projection methods based on both serial and parallel structures.
 
 ### lasso_realdata.jl
+
 
 ## Theory Check
 This folder includes three tests corresponding to three experiemnts in Section 5.1 Thesting Theoretical Bounds from our paper.
