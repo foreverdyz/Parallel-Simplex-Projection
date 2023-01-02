@@ -35,53 +35,6 @@ for j in 1:m
     data[j,:] = data[j,:]/findmax(data[j,:])[1]
 end
 
-#=
-Random.seed!(12345);
-res1 = @benchmark lasso_serial(data, b, $(rand(Normal(0, 1),i)), 1, sortscan_s);
-println("Serial Sort and Scan: ", median(res1))
-Random.seed!(12345);
-res2 = @benchmark lasso_parallel(data, b, $(rand(Normal(0, 1),i)), 1, sortscan_p);
-println("Parallel Sort and Scan: ", median(res2))
-Random.seed!(12345);
-res3 = @benchmark lasso_parallel(data, b, $(rand(Normal(0, 1),i)), 1, sortPscan_p);
-println("Parallel Sort and Partial Scan: ", median(res3))
-Random.seed!(12345);
-res4 = @benchmark lasso_serial(data, b, $(rand(Normal(0, 1),i)), 1, michelot_s);
-println("Serial Michelot: ", median(res4))
-Random.seed!(12345);
-res5 = @benchmark lasso_parallel(data, b, $(rand(Normal(0, 1),i)), 1, michelot_p);
-println("Parallel Michelot: ", median(res5))
-Random.seed!(12345);
-res6 = @benchmark lasso_serial(data, b, $(rand(Normal(0, 1),i)), 1, condat_s);
-println("Serial condat: ", median(res6))
-Random.seed!(12345);
-res7 = @benchmark lasso_parallel(data, b, $(rand(Normal(0, 1),i)), 1, condat_p);
-println("Parallel condat: ", median(res7))
-=#
-#=
-Random.seed!(12345);
-res1 = @benchmark lasso_serial($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, sortscan_s);
-println("Serial Sort and Scan: ", median(res1))
-Random.seed!(12345);
-res2 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, sortscan_p);
-println("Parallel Sort and Scan: ", median(res2))
-Random.seed!(12345);
-res3 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, sortPscan_p);
-println("Parallel Sort and Partial Scan: ", median(res3))
-Random.seed!(12345);
-res4 = @benchmark lasso_serial($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, michelot_s);
-println("Serial Michelot: ", median(res4))
-Random.seed!(12345);
-res5 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, michelot_p);
-println("Parallel Michelot: ", median(res5))
-Random.seed!(12345);
-res6 = @benchmark lasso_serial($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, condat_s);
-println("Serial condat: ", median(res6))
-Random.seed!(12345);
-res7 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), b, $(rand(Normal(0, 1),i)), 1, condat_p);
-println("Parallel condat: ", median(res7))
-=#
-
 function prep_data(A::AbstractArray, b::AbstractVector, x::AbstractVector)
     g = A'*(A*x+b)
     x = x - 0.05*g
@@ -108,26 +61,3 @@ println("Serial Condat: ", median(res6))
 Random.seed!(12345);
 res7 = @benchmark parallel_l1ball(condat_p, $(prep_data(data, b, rand(Normal(0,1), i))))
 println("Parallel Condat: ", median(res7))
-#=
-Random.seed!(12345);
-res1 = @benchmark lasso_serial($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, sortscan_s);
-println("Serial Sort and Scan: ", median(res1))
-Random.seed!(12345);
-res2 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, sortscan_p);
-println("Parallel Sort and Scan: ", median(res2))
-Random.seed!(12345);
-res3 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, sortPscan_p);
-println("Parallel Sort and Partial Scan: ", median(res3))
-Random.seed!(12345);
-res4 = @benchmark lasso_serial($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, michelot_s);
-println("Serial Michelot: ", median(res4))
-Random.seed!(12345);
-res5 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, michelot_p);
-println("Parallel Michelot: ", median(res5))
-Random.seed!(12345);
-res6 = @benchmark lasso_serial($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, condat_s);
-println("Serial condat: ", median(res6))
-Random.seed!(12345);
-res7 = @benchmark lasso_parallel($(data[:,shuffle(1:i)]), $(rand(Normal(0, 1), m)), $(rand(Normal(0, 1), i)), 1, condat_p);
-println("Parallel condat: ", median(res7))
-=#
