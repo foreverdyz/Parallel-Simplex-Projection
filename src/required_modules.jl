@@ -14,16 +14,4 @@ using Distributions
 using ThreadsX
 using Plots
 using BangBang
-#import PyPlot
-
-#import our simplex projection modules
-include("simplex/sort and scan/sortscanModule.jl")
-include("simplex/michelot/michelotModule.jl")
-include("simplex/condat/condatModule.jl")
-using .sortscan
-using .michelot
-using .condat
-
-#import our weighted simplex projection modules
-include("weighted/weighted simplex/wsimplexModule.jl")
-using. wsimplex
+#import PyPlots
