@@ -45,7 +45,31 @@ Projecting a vector onto a simplex is a well-studied problem that arises in a wi
 
 ## Description
 
-Given observable option prices and their respective strikes on various assets {1, ... , n}, we present methods to obtain inner and outer bounds on the feasible range of prices for a European basket call option with given strike relying on the assets {1, ... ,n}. The weights of the basket can be chosen freely. This problem can be stated as a *Generalized Moment Problem (GMP)*; an optimization problem over the space of probability measures. The code we present ought to approximate the optimal solution, i.e., the optimal measure for the GMP, by a hierarchy of semidefinite programs, known as the Lasserre hierarchy. Under suitable assumptions we prove in our [paper](https://arxiv.org/abs/2111.07701), that the hierarchy converges, For a comprehensive treatment of the problem of pricing basket options relying on multiple assets and its mathematical formulation we refer to the [paper](https://arxiv.org/abs/2111.07701). The code presented here was used to obtain all bounds of the examples given in the paper. For the sake of completeness all results that appear in the paper may be found in [results](results).
+###  Parallelization of Projection onto a Simplex
+
+Consider a scaled standard simplex with scaling factor <img src="https://render.githubusercontent.com/render/math?math=\large b">,
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \Delta_b:=\{v\in\mathbb{R}^n\ |\ \sum_{i=1}^{n}v_i=b\}">;
+
+we want to porject a vector <img src="https://render.githubusercontent.com/render/math?math=\large d"> onto such simplex. There have been some known method, e.g. [SortScan](https://link.springer.com/article/10.1007/BF01580223), [Pivot](https://dl.acm.org/doi/abs/10.1145/1390156.1390191), [Michelot](https://dl.acm.org/doi/abs/10.5555/3228358.3228653), [Condat](https://link.springer.com/article/10.1007/s10107-015-0946-6), [Bucket](https://link.springer.com/article/10.1007/s10107-019-01401-3), etc.
+
+We propose a distributed structure to parallel simplex projection, and develop parallel methods based on some known serial algorithms. Our contributions includes:
+- modify an existing parallel method developed by [Wasson et al.](https://ieeexplore.ieee.org/document/8768221);
+- do some theoretical analysis including supplying average complexity to some known serial methods, showing the sparsity of simplex projection, etc.;
+- on the ground of our theoretical work, we propose a distributed structure for simplex projection;
+- apply novel structure to parallelize some known serial algorithms, see e.g. [Michelot](https://dl.acm.org/doi/abs/10.5555/3228358.3228653), [Condat](https://link.springer.com/article/10.1007/s10107-015-0946-6), etc.;
+- analyze complexity for these new parallel algorithms.
+
+### Extension of Simplex Projection
+
+There are some projections onto other polyhedra can leverage projection onto a scaled standard simplex:
+- <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
+- parity polytope;
+- weighted simplex and weighted <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
+
+### Real-world Data Test
+
+- LASSO, which we implement Projected Gradient Descent (PGD) algorithm to solve Lasso problem;
 
 ## Language
 
