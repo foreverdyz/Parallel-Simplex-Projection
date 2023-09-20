@@ -18,20 +18,24 @@ get a more recent version or would like support**
 
 ## Cite
 
-To cite this material, please cite this repository, using the following DOI.
+To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2022.0328) using its DOI and the software itself, using its DOI.
 
-[![DOI](https://zenodo.org/badge/497938610.svg)](https://zenodo.org/badge/latestdoi/497938610)
+To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-Below is the BibTex for citing this version of the code.
+https://doi.org/10.1287/ijoc.2022.0328
+
+https://doi.org/10.1287/ijoc.2022.0328.cd
+
+Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{OptionsPricing,
-  author =        {Didier Henrion, Felix Kirschner, Etienne de Klerk, Milan Korda, Jean-Bernard Lasserre, Victor Magron},
+@article{ParallelSimplexProjection,
+  author =        {Y. Dai and C. Chen},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{OptionsPricing} Version v1.0},
-  year =          {2022},
-  doi =           {10.5281/zenodo.6602361},
-  url =           {https://github.com/INFORMSJoC/2021.0321},
+  title =         {{Sparsity-Exploiting Distributed Projections onto a Simplex}},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2022.0328.cd},
+  url =           {https://github.com/INFORMSJoC/2022.0328},
 }  
 ```
 
