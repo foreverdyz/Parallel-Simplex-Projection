@@ -41,10 +41,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ## Background 
 
-An option is a derivative security. There are many kinds of options. We consider European call options, which give the owner of the option the right, but no obligation to purchase a (basket of) stock(s) at a predetermined price, called the strike price, at a predetermined date in the future, called maturity. 
-
-
-For example, say Alice sells Bob an option on a stock X with strike 100 USD maturing in 2 months time. Two months later, if the current stock price P of X is greater than 100 USD, Bob will exercise the option, meaning Alice has to sell Bob a stock of X for 100 USD. In this case Bob makes a profit of *(P-100)* USD since he can sell the stock at the market for P USD but he only paid 100 USD. If the the date of maturity the price P of the stock is below 100 USD, Bob will not exercise the option since it is cheaper to buy the stock at the stock market. The payoff function for Bob hence is *max(0, x-K)* where *x* is the stock price at maturity and *K* is the strike price. Since Bob's payoff is nonnegative, the option must have a nonnegative value. The code presented here contributes to the question how much an option is worth, which has been studied extensively. 
+Projecting a vector onto a simplex is a well-studied problem that arises in a wide range of optimization problems.  Numerous algorithms have been proposed for determining the projection; however, the primary focus of the literature has been on serial algorithms. We present a parallel method that decomposes the input vector and distributes it across multiple processors for local projection. Our method is especially effective when the resulting projection is highly sparse; which is the case, for instance, in large-scale problems with i.i.d. entries. Moreover, the method can be adapted to parallelize a broad range of serial algorithms from the literature. We fill in theoretical gaps in serial algorithm analysis, and develop similar results for our parallel analogues. Numerical experiments conducted on a wide range of large-scale instances, both real-world and simulated, demonstrate the practical effectiveness of the method.  
 
 ## Description
 
