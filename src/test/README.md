@@ -51,6 +51,7 @@ We implemented the following parallel projections based on the simplex projectio
 
 We also conduct the following experiments to test our algorithms:
 - Runtime fairness test: serial method vs. parallel method in 1 core;
+- Some theories check (see our [paper](https://doi.org/10.1287/ijoc.2022.0328) for details);
 - Benchmark runtime for the simplex projection with input vectors $d$ in multiple sizes and distributions;
 - Benchmark runtime for the $\ell_1$ ball projection with the input vector $d$ in $N(0,1)$ and size of $10^8$;
 - Benchmark runtime for the weighted simplex projection with the input vector $d$ in $N(0,1)$ and size of $10^8$ and the weight $w$ in$U[0,1]$;
