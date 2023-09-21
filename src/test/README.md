@@ -83,3 +83,7 @@ All real-world data that was used is available in [data](data). Other data are g
 ## Acknowledgements
 
 This work has been partially funded by the Office of Naval Research under grant.
+
+# Data for replication
+
+Here is the data needed for replicating the experiments. kdda.txt is data from [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)), and kdd12.txt is data from [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012)
