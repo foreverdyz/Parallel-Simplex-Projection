@@ -26,4 +26,4 @@ Run the script paritypolytope_runtime_benchmark in [src](src) with 80 cores, you
 
 ## Lasso on real-world data
 
-Run the script real_data_kdd10.jl and real_data_kdd12.jl in [src](src) with 80 cores, you can get runtime results for Lasso in [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)), and kdd12.txt is data from [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012); then you can get the plots: kdd2010_comp.png, kdd2010.png, kdd2012_comp.png, kdd2012.png.
+Run the script real_data_kdd10.jl and real_data_kdd12.jl in [src](src) with 80 cores, you can get runtime results for Lasso in [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012); then you can get the plots: kdd2010_comp.png, kdd2010.png, kdd2012_comp.png, kdd2012.png.
