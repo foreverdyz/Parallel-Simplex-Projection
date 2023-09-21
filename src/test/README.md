@@ -64,7 +64,7 @@ The code is written in the [Julia programming language](https://julialang.org). 
 
 ## Required packages 
 
-To run the content of scripts in [src](src) the following Julia packages are required: ThreadsX, BangBang, BenchmarkTools, Random, Distributions.
+To run the content of scripts in [src](src), the following Julia packages are required: ThreadsX, BangBang, BenchmarkTools, Random, Distributions.
 
 To install a package simply run
 
