@@ -18,8 +18,6 @@ get a more recent version or would like support**
 
 ## Cite
 
-To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2022.0328) using its DOI and the software itself, using its DOI.
-
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
 https://doi.org/10.1287/ijoc.2022.0328
