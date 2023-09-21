@@ -28,7 +28,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
 @article{ParallelSimplexProjection,
-  author =        {Y. Dai and C. Chen},
+  author =        {Yongzheng Dai and Chen Chen},
   publisher =     {INFORMS Journal on Computing},
   title =         {{Sparsity-Exploiting Distributed Projections onto a Simplex}},
   year =          {2023},
