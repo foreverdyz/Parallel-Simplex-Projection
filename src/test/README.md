@@ -52,7 +52,9 @@ We implemented the following parallel projections based on the simplex projectio
 - projection onto a weighted simplex and a weighted <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
 
 We also conduct the following experiments to test our algorithms:
+- Runtime fairness test: serial method vs. parallel method in 1 core;
 - Benchmark runtime for the simplex projection with input vectors <img src="https://render.githubusercontent.com/render/math?math=v"> in multiple sizes and distributions.
+- Benchmark runtime for the <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball projection with input vector <img src="https://render.githubusercontent.com/render/math?math=v"> ball in <img src="https://render.githubusercontent.com/render/math?math=N(0,1)"> and a size of <img src="https://render.githubusercontent.com/render/math?math=10^8">.
 
 ## Language
 
