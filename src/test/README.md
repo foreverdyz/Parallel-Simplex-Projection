@@ -45,7 +45,7 @@ Projecting a vector onto a simplex is a well-studied problem that arises in a wi
 
 We implemented the following parallel projections based on the simplex projection:
 - projection onto a simplex;
-- projection onto a $\ell_1$ ball;
+- projection onto an $\ell_1$ ball;
 - projection onto a weighted simplex and a weighted $\ell_1$ ball;
 - projection onto a parity polytope;
 
