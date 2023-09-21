@@ -57,7 +57,7 @@ We also conduct the following experiments to test our algorithms:
 - Benchmark runtime for the $\ell_1$ ball projection with the input vector $d$ in $N(0,1)$ and size of $10^8$.
 - Benchmark runtime for the weighted simplex projection with the input vector $d$ in $N(0,1)$ and size of $10^8$ and the weight $w$ in$U[0,1]$;
 - Benchmark runtime for the weighted $\ell_1$ ball projection with the same setting as the weighted simplex projection;
-- Benchmark runtime for the parity polytope projection with the input vector $d$ in <img src="https://render.githubusercontent.com/render/math?math=U[1,2]"> and size of <img src="https://render.githubusercontent.com/render/math?math=10^8-1">;
+- Benchmark runtime for the parity polytope projection with the input vector $d$ in $U[1,2]$ and size of $10^8-1$;
 - Implemented Lasson method for two Real-world datasets: [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012).
 
 ## Language
