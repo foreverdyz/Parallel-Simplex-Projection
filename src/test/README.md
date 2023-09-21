@@ -51,7 +51,8 @@ We implemented the following parallel projections based on the simplex projectio
 - projection onto a parity polytope;
 - projection onto a weighted simplex and a weighted <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> ball;
 
-We also conduct following experiments to test our algorithms:
+We also conduct the following experiments to test our algorithms:
+- Benchmark runtime for the simplex projection with input vectors <img src="https://render.githubusercontent.com/render/math?math=v"> in multiple sizes and distributions.
 
 ## Language
 
