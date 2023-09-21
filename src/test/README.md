@@ -58,7 +58,7 @@ We also conduct the following experiments to test our algorithms:
 - Benchmark runtime for the weighted simplex projection with the input vector $d$ in $N(0,1)$ and size of $10^8$ and the weight $w$ in$U[0,1]$;
 - Benchmark runtime for the weighted $\ell_1$ ball projection with the same setting as the weighted simplex projection;
 - Benchmark runtime for the parity polytope projection with the input vector $d$ in $U[1,2]$ and size of $10^8-1$;
-- Implemented Lasson method for two Real-world datasets: [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012).
+- Implemented Lasson method for two real-world datasets: [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012).
 
 ## Language
 
@@ -66,7 +66,7 @@ The code is written in the [Julia programming language](https://julialang.org). 
 
 ## Required packages 
 
-To run the content of "hierarchy_outer_bounds.jl" in [src](src) the following Julia packages are required: Combinatorics, JuMP, MosekTools, LinearAlgebra.
+To run the content of scripts in [src](src) the following Julia packages are required: ThreadsX, BangBang, BenchmarkTools, Random, Distributions.
 
 To install a package simply run
 
@@ -74,51 +74,14 @@ To install a package simply run
 pkg> add PACKAGE_NAME    # Press ']' to enter the Pkg REPL mode.
 ```
 
-To run the "example_boyle_lin.jl" file the packages "MomentOpt" and "DynamicPolynomials" are required. For these to function properly some other packages may have to be downgraded. More information on how to do this is to be found in the file "example_boyle_lin.jl".
-
-## Example
-
-To compute outer bounds of the price range of an European basket call option a given strike *K* and observable prices of European call options on the assets {1, ..., n} contained in the basket use the code in *hierarchy_outer_bounds.jl* in [src](src). 
-
-Define a matrix *strikes*, where row *i* contains the prices of the observable options corresponding to asset *i* in ascending order. Further, define a matrix *prices* where the entry *prices[i,j]* contains the price of the option on asset *i* with strike price given by *strikes[i,j]*. 
-
-For example, open the file hierarchy_outer_bounds.jl in your IDE and set
-
-```julia
-level = 1
-
-K = 105
-
-B = 400
-
-M = 200000
-
-strikes = [90 95 100 110 120; 90 96 102 107 115]
-
-prices = [20 15.5 12 5.5 1; 20.5 15 10 6 0.75]
-
-weights = [1 / 2 1 / 2]
-```
-One can check if the given data is consistent by running
-
-```julia
-checkConsistency(strikes, prices)
-```
-
-If this returns "true" then run
-
-```julia
-compBounds(K, B, M, level, silent, strikes, prices, weights)
-```
-
-For this particular example the solution is given by: lower bound = 4.625, upper bound = 8.016.
-
-
-
-## Results
+## Replicating
 
 All results appearing in the paper are collected in [results](results). Information on how to reproduce the results may be found in the README file in the folder [results](results).
 
 ## Data 
 
-All data that was used is available in [data](data). Some of the data points were created artificially and some were observed from publicly available data. All data sets are consistent, i.e., do not allow for arbitrage strategies. 
+All real-world data that was used is available in [data](data). Other data are generated randomly (with random seed 12345) based on some distributions.
+
+## Acknowledgements
+
+This work has been partially funded by the Office of Naval Research under grant.
