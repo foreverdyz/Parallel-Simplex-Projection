@@ -47,7 +47,7 @@ We implemented the following parallel projections based on the simplex projectio
 - projection onto a simplex (see folder [simplex and l1ball](src/simplex and l1ball));
 - projection onto an $\ell_1$ ball (see folder simplex and l1ball in [src](src));
 - projection onto a weighted simplex and a weighted $\ell_1$ ball (see folder weighted simplex and ball in [src](src));
-- projection onto a parity polytope (see file parity_polytope.jl in [src](src));
+- projection onto a parity polytope (see file [parity_polytope.jl](src/parity_polytope.jl));
 
 We also conduct the following experiments to test our algorithms:
 - Runtime fairness test: serial method vs. parallel method in 1 core (see fairness_test.jl in [src](src));
