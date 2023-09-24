@@ -44,7 +44,7 @@ Projecting a vector onto a simplex is a well-studied problem that arises in a wi
 ## Description
 
 We implemented the following parallel projections based on the simplex projection:
-- projection onto a simplex;
+- projection onto a simplex [simplex and l1ball](src/simplex and l1ball);
 - projection onto an $\ell_1$ ball;
 - projection onto a weighted simplex and a weighted $\ell_1$ ball;
 - projection onto a parity polytope;
@@ -83,8 +83,4 @@ All real-world data that was used is available in [data](data). Other data are g
 
 ## Acknowledgements
 
-This work has been partially funded by the Office of Naval Research under grant.
-
-# Data for replication
-
-Here is the data needed for replicating the experiments. kdda.txt is data from [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)), and kdd12.txt is data from [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012)
+This work has been partially funded by the Office of Naval Research under grant N00014-23-1-2632.
