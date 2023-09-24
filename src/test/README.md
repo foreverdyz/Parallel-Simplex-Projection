@@ -44,20 +44,21 @@ Projecting a vector onto a simplex is a well-studied problem that arises in a wi
 ## Description
 
 We implemented the following parallel projections based on the simplex projection:
-- projection onto a simplex (see folder simplex and l1ball in [src](src);
-- projection onto an $\ell_1$ ball;
-- projection onto a weighted simplex and a weighted $\ell_1$ ball;
-- projection onto a parity polytope;
+- projection onto a simplex (see folder simplex and l1ball in [src](src));
+- projection onto an $\ell_1$ ball (see folder simplex and l1ball in [src](src));
+- projection onto a weighted simplex and a weighted $\ell_1$ ball (see folder weighted simplex and ball in [src](src));
+- projection onto a parity polytope (see file parity_polytope.jl in [src](src));
 
 We also conduct the following experiments to test our algorithms:
-- Runtime fairness test: serial method vs. parallel method in 1 core;
-- Some theories check (see our [paper](https://doi.org/10.1287/ijoc.2022.0328) for details);
-- Benchmark runtime for the simplex projection with input vectors $d$ in multiple sizes and distributions;
-- Benchmark runtime for the $\ell_1$ ball projection with the input vector $d$ in $N(0,1)$ and size of $10^8$;
-- Benchmark runtime for the weighted simplex projection with the input vector $d$ in $N(0,1)$ and size of $10^8$ and the weight $w$ in $U[0,1]$;
-- Benchmark runtime for the weighted $\ell_1$ ball projection with the same setting as the weighted simplex projection;
-- Benchmark runtime for the parity polytope projection with the input vector $d$ in $U[1,2]$ and size of $10^8-1$;
-- Implemented Lasson method for two real-world datasets: [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012).
+- Runtime fairness test: serial method vs. parallel method in 1 core (see fairness_test.jl in [src](src));
+- Unit test: check our parallel methods will return the same (and correct) results as serial methods (see unit_test.jl in [src](src)); 
+- Some theories check (see our [paper](https://doi.org/10.1287/ijoc.2022.0328) for details and find code in folder theory check from [src](src));
+- Benchmark runtime for the simplex projection with input vectors $d$ in multiple sizes and distributions (see file simplex_runtime_benchmark.jl in [src](src));
+- Benchmark runtime for the $\ell_1$ ball projection with the input vector $d$ in $N(0,1)$ and size of $10^8$ (see file l1ball_runtime_benchmark.jl in [src](src));
+- Benchmark runtime for the weighted simplex projection with the input vector $d$ in $N(0,1)$ and size of $10^8$ and the weight $w$ in $U[0,1]$ (see file wsimplex_runtime_benchmark.jl in [src](src));
+- Benchmark runtime for the weighted $\ell_1$ ball projection with the same setting as the weighted simplex projection (see file wl1ball_runtime_benchmark.jl in [src](src));
+- Benchmark runtime for the parity polytope projection with the input vector $d$ in $U[1,2]$ and size of $10^8-1$ (see file paritypolytope_runtime_benchmark.jl in [src](src));
+- Implemented Lasson method for two real-world datasets: [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012) (see files real_data_kdd10.jl and real_data_kdd12.jl in [src](src)).
 
 ## Language
 
