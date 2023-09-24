@@ -5,9 +5,9 @@ BenchmarkTools.DEFAULT_PARAMETERS.gcsample = true
 BenchmarkTools.DEFAULT_PARAMETERS.samples = 100
 BenchmarkTools.DEFAULT_PARAMETERS.seconds = 20
 
-include("weighted simplex and ball/wsortscan.jl")
-include("weighted simplex and ball/wmichelot.jl")
-include("weighted simplex and ball/wcondat.jl")
+include("weighted_simplex_and_ball/wsortscan.jl")
+include("weighted_simplex_and_ball/wmichelot.jl")
+include("weighted_simplex_and_ball/wcondat.jl")
 
 println("You are using ", nthreads(), " threads for parallel computing")
 println("Warning: following experiments are for 80 threads!")

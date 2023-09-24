@@ -3,7 +3,7 @@
 using Base.Threads
 using ThreadsX
 
-include("simplex_wrap.jl")
+include("simplex_and_l1ball/simplex_wrap.jl")
 
 """
     parity_s(f, data)
