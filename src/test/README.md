@@ -76,7 +76,7 @@ pkg> add PACKAGE_NAME    # Press ']' to enter the Pkg REPL mode.
 
 ## Replicating
 
-All results appearing in the paper are collected in [results](results). Information on how to reproduce the results may be found in the README file in the folder [results](results).
+All results appearing in the paper are collected in [results](results). Information on how to reproduce the results may be found in the [README.md (in results)](src/README.md). Note that, since the two real datasets [kdd2010](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2010%20(algebra)) and [kdd2012](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#kdd2012) are too large to upload, please download them as the tutorial in [README.md in results](src/README.md) and move them to [src](src) before you run [real_data_kdd10.jl](src/real_data_kdd10.jl) and [real_data_kdd12.jl](src/real_data_kdd12.jl) to reproduce results of real-world datasets. 
 
 ## Data 
 
