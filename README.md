@@ -4,25 +4,6 @@ This archive is under the [MIT License](LICENSE).
 
 The software and data in this repository are a snapshot of the software and data that were used in the research reported on in [Sparsity-Exploiting Distributed Projections onto a Simplex](https://doi.org/10.1287/ijoc.2022.0328) by Yongzheng Dai and Chen Chen.  See also ([https://arxiv.org/abs/2111.07701](https://arxiv.org/abs/2204.08153)).
 
-## Cite
-
-To cite the contents of this repository, please cite both the paper and this repo
-
-https://doi.org/10.1287/ijoc.2022.0328
-
-Below is the BibTex for citing the paper
-
-```
-@article{ParallelSimplexProjection,
-  author =        {Yongzheng Dai and Chen Chen},
-  publisher =     {INFORMS Journal on Computing},
-  title =         {{Sparsity-Exploiting Distributed Projections onto a Simplex}},
-  year =          {2023},
-  doi =           {10.1287/ijoc.2022.0328},
-  url =           {https://github.com/INFORMSJoC/2022.0328},
-}  
-```
-
 ## Background 
 
 Projecting a vector onto a simplex is a well-studied problem that arises in a wide range of optimization problems.  Numerous algorithms have been proposed for determining the projection; however, the primary focus of the literature has been on serial algorithms. We present a parallel method that decomposes the input vector and distributes it across multiple processors for local projection. Our method is especially effective when the resulting projection is highly sparse; which is the case, for instance, in large-scale problems with i.i.d. entries. Moreover, the method can be adapted to parallelize a broad range of serial algorithms from the literature. We fill in theoretical gaps in serial algorithm analysis, and develop similar results for our parallel analogues. Numerical experiments conducted on a wide range of large-scale instances, both real-world and simulated, demonstrate the practical effectiveness of the method.  
